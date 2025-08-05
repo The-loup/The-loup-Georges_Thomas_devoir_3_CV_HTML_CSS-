@@ -1,4 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+html{
+    background-color:#f3f3f3;
+}
+header, footer{
+    background-color:#17abb3;
+}
+section .col{
+    display: flex;
+    flex-direction: row;
+}
 header, main, footer {
     max-width: 1160px;
     margin: auto;
+}
+h1, h2, h3{
+    font-family: lato, sans-serif;
+}
+h3{
+    color: #17abb3;
+}
+p{
+    font-family: raleway, sans-serif;
+}
+div:hover{
+    background-color: #e3e3e3;
 }
