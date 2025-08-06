@@ -11,15 +11,41 @@ header, footer{
     color: #ffffff;
     text-align: center;
 }
+body{
+    background-color:#ffffff;
+}
 h1, h2, h3{
     font-family: lato, sans-serif;
-}
-h3{
-    color: #17abb3;
 }
 p{
     font-family: raleway, sans-serif;
 }
+h3{
+    color: #17abb3;
+}
+main{
+    display:flex;
+    flex-basis: 0;
+}
+article{
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+}
+.droite{
+    width:1400px;
+    margin-left:10px;
+}
 div:hover{
-    background-color: #e3e3e3;
+    border-left:5px;
+    border-left-style:solid;
+    border-left-color:#17abb3;
+    background-color: #f3f3f3;
+}
+.date{
+    text-align:right;
+}
+.gauche{
+    width:800px;
+    background-color:#e3e3e3;
 }
