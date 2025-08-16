@@ -29,7 +29,9 @@ em{
     font-size:3rem;
     font-weight:bolder;
     font-style:normal;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 h1{
     text-align:center;
@@ -45,21 +47,11 @@ nav a{
     gap:10px;
 }
 img{
-    display:flex;
-    flex-direction:row;
-    align-items:left;
-    justify-content:left;
     gap:10px;
     border:3px solid #ffffff;
-    border-radius:100px;
-    width: 150px;
-    height: 150px;
     border-radius: 100%; 
-    overflow: hidden;  
-    width: 30%; 
-    height: 30%; 
+    overflow: hidden; 
     object-fit: cover; 
-    
 }
 body{
     background-color:#ffffff;
@@ -83,12 +75,10 @@ article{
     flex-wrap:wrap;
 }
 main article:first-of-type section:first-of-type p span{
-    text-align:justify;
     color:#17abb3;
 }
-main article:nth-of-type(2) section:first-of-type p{
-    text-align:justify;
-    text-indent:20px;
+main article:first-of-type section:first-of-type p{
+    text-align: justify;
 }
 .droite{
     width:1400px;
@@ -105,6 +95,7 @@ div{
 }
 main article:nth-of-type(2) section div p{
     width:200px;
+    text-align:justify;
 }
 main article:nth-of-type(2) section div span{
    align-content:flex-end; 
@@ -116,4 +107,10 @@ main article:nth-of-type(2) section div span{
 img{
     width:150px;
     height:150px;
+    display: flex;
+    align-items: center;
+    align-content: start;
+    position: absolute;
+    left: 130px;
+    top: 30px;
 }
