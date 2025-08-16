@@ -1,6 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: "raleway normal";
+    src: url("../font/raleway/static/Raleway-Regular.ttf"), url("../font/raleway/Raleway-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "raleway gras";
+    src: url("../font/raleway/static/Raleway-Bold.ttf"), url("../font/raleway/Raleway-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "raleway italique";
+    src: url("../font/raleway/static/Raleway-Italic.ttf"), url("../font/raleway/Raleway-Italic-VariableFont_wght.ttf");
+}
 html{
     background-color:#f3f3f3;
+}
+*{
+    font-family: raleway, normal;
 }
 header, main, footer {
     max-width: 1160px;
@@ -11,7 +26,10 @@ header, footer{
     color: #ffffff;
 }
 em{
-    text-align:center;
+    font-size:3rem;
+    font-weight:bolder;
+    font-style:normal;
+    text-align: center;
 }
 h1{
     text-align:center;
@@ -64,7 +82,11 @@ article{
     flex-direction:column;
     flex-wrap:wrap;
 }
-.Profile{
+main article:first-of-type section:first-of-type p span{
+    text-align:justify;
+    color:#17abb3;
+}
+main article:nth-of-type(2) section:first-of-type p{
     text-align:justify;
     text-indent:20px;
 }
@@ -81,10 +103,17 @@ div{
     border-left-style:solid;
     border-color:#ffffff;
 }
-.date{
-    text-align:right;
+main article:nth-of-type(2) section div p{
+    width:200px;
+}
+main article:nth-of-type(2) section div span{
+   align-content:flex-end; 
 }
 .gauche{
     width:800px;
     background-color:#e3e3e3;
+}
+img{
+    width:150px;
+    height:150px;
 }
